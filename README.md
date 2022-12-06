@@ -1,5 +1,7 @@
 # Idea: Fast food randomizer
+
 - feel free to add more api suggestions, I could use the help
+
 ## Features:
 - 1 Fast food search near me
     ### Possible features not all will be implemented (I'm not sure of their difficulty rating):
