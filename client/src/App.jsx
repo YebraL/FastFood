@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {HashRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import Home from './pages/home';
 import Login from './pages/Login';
+import Forums from './pages/Forums';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -32,6 +33,10 @@ function App() {
                           <Link to='login'> Login </Link>
                         </Nav.Item>
 
+                        <Nav.Item>
+                          <Link to='forum'> Forums </Link>
+                        </Nav.Item>
+
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
@@ -40,6 +45,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='login/' element={<Login/>}/>
+              <Route path='forum/' element={<Forums/>}/>
             </Routes>
 
         </Router>
