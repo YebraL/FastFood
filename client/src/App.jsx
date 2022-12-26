@@ -11,7 +11,6 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function App() {
   
-
   return (
     <div className="App">
     
@@ -23,7 +22,7 @@ function App() {
                 <Container>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto" style={{width:'20%', justifyContent:'space-around'}}>
                         
                         <Nav.Item>
                           <Link to='/'> Home </Link>
@@ -37,10 +36,12 @@ function App() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+
             <Routes>
               <Route path='/' element={<Home/>}/>
               <Route path='login/' element={<Login/>}/>
             </Routes>
+
         </Router>
       </div>
       
