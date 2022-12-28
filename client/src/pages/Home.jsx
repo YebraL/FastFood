@@ -14,7 +14,7 @@ function Home() {
         <h4>Home</h4>
 
         <Carousel slide={true}>
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100"
                 src={img1}
@@ -25,7 +25,7 @@ function Home() {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100"
                 src={img2}
@@ -36,7 +36,7 @@ function Home() {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={2000}>
                 <img
                 className="d-block w-100"
                 src={img3}

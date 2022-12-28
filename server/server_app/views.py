@@ -3,7 +3,6 @@ from django.http import HttpResponse
 # from serpapi import GoogleSearch
 
 
-
 # Create your views here.
 def index(request):
     
