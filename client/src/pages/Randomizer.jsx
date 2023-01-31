@@ -2,6 +2,11 @@ import React from 'react'
 import axios from 'axios'
 import {useState, useEffect} from 'react'
 
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Placeholder from 'react-bootstrap/Placeholder';
+import imgG from '../assets/resT.jpeg';
+
 
 function Randomizer() {
     
@@ -40,13 +45,13 @@ function Randomizer() {
 
         var config = {
         method: 'get',
-        url: `https://maps.googleapis.com/maps/api/place/textsearch/json?query=restaurants%20near%20me%20IL&key=${TempKey}`,
+        url: `https://maps.googleapis.com/maps/api/place/textsearch/json?query=restaurants%20near%20me&key=${something}`,
         headers: { }
         };
 
         axios(config)
         .then(function (response) {
-        // console.log(response.data.results);
+        console.log(response.data.results);
         setRestaurants(response.data.results);
         })
         .catch(function (error) {
@@ -69,7 +74,20 @@ function Randomizer() {
         
         {restaurants && restaurants.map((restaurant)=> {
             return(
-                <div> Restaurant: {restaurant.name}, Rating: {restaurant.rating}</div>
+                <div className="d-flex justify-content-around"> 
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src={imgG} />
+                        <Card.Body>
+                        <Card.Title>{restaurant.name}</Card.Title>
+                        <Card.Text>
+                            {restaurant.rating}
+                            <hr/>
+                            {restaurant.formatted_address}
+                        </Card.Text>
+                        <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
             )
         })}
         <hr/>

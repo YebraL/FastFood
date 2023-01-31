@@ -1,0 +1,86 @@
+[
+    {
+        "model": "server_app.User",
+        "pk":1,
+        "fields":{
+            "firstName": "Mario",
+            "lastName":"Bros",
+            "email":"Mario@Nintendo.com",
+            "password":"password"            
+        }
+    },
+    {
+        "model": "server_app.User",
+        "pk":2,
+        "fields":{
+            "firstName": "Admin",
+            "lastName":"Admin",
+            "email":"Admin@Nintendo.com",
+            "password":"admin"            
+        }
+    },
+    {
+        "model": "server_app.User",
+        "pk":3,
+        "fields":{
+            "firstName": "Luigi",
+            "lastName":"Bros",
+            "email":"Luigi@Nintendo.com",
+            "password":"password"            
+        }
+    },
+    {
+        "model": "server_app.Post",
+        "pk":1,
+        "fields":{
+            "title": "Don't pick the olives",
+            "content":"Impanadas where great till I bit the olive",
+            "user": 1
+        }
+    },
+    {
+        "model": "server_app.Post",
+        "pk":2,
+        "fields":{
+            "title": "McDonalds *face_palm*",
+            "content":"Don't eat here",
+            "user": 1
+        }
+    },
+    {
+        "model": "server_app.Post",
+        "pk":3,
+        "fields":{
+            "title": "Hells Kitchen",
+            "content":"Food here are da Bomb",
+            "user": 2
+        }
+    },
+    {
+        "model": "server_app.Post",
+        "pk":4,
+        "fields":{
+            "title": "Long Horn Steak House",
+            "content":"Their steak cooked to perfection, RARE",
+            "user": 2
+        }
+    },
+    {
+        "model": "server_app.Post",
+        "pk":5,
+        "fields":{
+            "title": "Taco Bell",
+            "content":"Authentic Mexican food my ass",
+            "user": 3
+        }
+    },
+    {
+        "model": "server_app.Post",
+        "pk":6,
+        "fields":{
+            "title": "Joey's",
+            "content":"I'm coming back to this place",
+            "user": 3
+        }
+    }
+]
